@@ -66,7 +66,7 @@ object SW_TSQR {
       println(s"n:${H_collection(i)(0).length}")
       println()
     }
-    println("Reassamblance")
+    println("Get original matrix from QR")
     val rebuild = matrixMultiply(Q, matrix_cpy)
     rebuild.map(x=>println(x.map(_.round).toList))
     println()
